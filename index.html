@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nicholas Thomas</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #222222;
+      --muted: #666666;
+      --accent: #2563eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #161616;
+        --text: #eeeeee;
+        --muted: #999999;
+        --accent: #60a5fa;
+      }
+    }
+    body {
+      margin: 0 auto;
+      max-width: 680px;
+      padding: 48px 20px;
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+    a { color: var(--accent); }
+    h1 { font-size: 36px; margin: 0 0 8px; }
+    h2 { font-size: 20px; margin: 40px 0 12px; }
+    .muted { color: var(--muted); }
+    nav a { margin-right: 16px; }
+    .intro { display: flex; align-items: center; gap: 28px; }
+    .photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    @media (max-width: 500px) {
+      .intro { flex-direction: column; align-items: flex-start; gap: 20px; }
+      .photo { width: 110px; height: 110px; }
+    }
+    footer { margin-top: 48px; font-size: 14px; color: var(--muted); }
+  </style>
+</head>
+<body>
+
+  <div class="intro">
+    <img class="photo" src="me.jpg" alt="Photo of Nicholas Thomas">
+    <div>
+      <h1>Nicholas Thomas</h1>
+      <p class="muted">Ph.D. student at UT Austin</p>
+      <nav>
+        <a href="https://github.com/nickthomas990">GitHub</a>
+      </nav>
+    </div>
+  </div>
+
+  <h2>About</h2>
+  <p>I'm a first-year Ph.D. student at UT Austin, advised by <a href="https://www.cs.utexas.edu/~vijay/">Prof. Vijay Chidambaram</a>. My research interests lie in distributed systems.</p>
+
+  <h2>Projects</h2>
+  <p class="muted">Coming soon.</p>
+
+  <footer>© 2026 Nicholas Thomas</footer>
+
+</body>
+</html>
